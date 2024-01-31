@@ -60,9 +60,15 @@ caption {
 
   </head>
   
-  <body>
+  <tbody>
     <h1>Table template</h1>
         <table>
+          <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+          <colgroup>
+            <col span="2">
+            <col style="border: 2px solid black">
+            <col span="9">
+          </colgroup>
             <tr>
             Rows
 
@@ -92,11 +98,11 @@ caption {
             <tr>
                 <th>Mars</th> <td>0.642</td> <td>6,792</td> <td>3933</td> <td>3.7</td> <td>24.7</td> <td>227.9</td> <td>-65</td> <td>2</td> <td>The red planet</td>
             </tr>
-            <th rowspan="5" colspan="1" scope="coL" scope="row">Jovian planets</th>
+            <th rowspan="5" colspan="1" scope="coL" scope="row" scope="rowgroup">Jovian planets</th>
             
             
             <tr>
-              <th rowspan="2" colspan="1" >Gas giants</th>
+              <th rowspan="2" colspan="1"  scope="rowgroup" >Gas giants</th>
                 <th>Jupiter</th> <td>1898</td> <td>142,984</td> <td>1326</td> <td>23.1</td> <td>9.9</td> <td>778.6</td> <td>-110</td> <td>67</td> <td>The largest planet</td>
             </tr>
 
@@ -107,7 +113,7 @@ caption {
             
               
               <tr>
-                <th colspan="1" rowspan="2" scope="coL" scope="row">Ice giants</th>
+                <th colspan="1" rowspan="2" scope="coL" scope="row"  scope="rowgroup">Ice giants</th>
                   <th>Uranus</th> <td>86.8</td> <td>51,118</td> <td>1271</td> <td>8.7</td> <td>17.2</td> <td>2872.5</td> <td>-195</td> <td>27</td>
               </tr>
               <tr>
@@ -118,7 +124,7 @@ caption {
               <Th colspan="2" rowspan="1">Dwarf planets*</Th><th>Pluto</th> <td>0.0146</td> <td>2,370</td> <td>2095</td> <td>0.7</td> <td>153.3</td> <td>5906.4</td> <td>-225</td> <td>5</td> <td>Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
             
         
-        
+        <!--bellow is the table header-->
         Columns
         <thead>
             <tr>
@@ -136,9 +142,8 @@ caption {
                 <th>Notes</th>
             </tr>
         </thead>
-        Caption
+       
         
-        Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
-    </table>
-  </body>
+        </table>
+  </tbody>
 </html>
