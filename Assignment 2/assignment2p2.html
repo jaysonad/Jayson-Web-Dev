@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table template</title>
     <link href="minimal-table.css" rel="stylesheet" type="text/css">
+    
     <style>
         html {
   font-family: sans-serif;
@@ -64,6 +65,7 @@ caption {
     <h1>Table template</h1>
         <table>
           <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+          <!--allows me to alter column style-->
           <colgroup>
             <col span="2">
             <col style="border: 2px solid black">
@@ -72,7 +74,7 @@ caption {
             <tr>
            
 
-        
+        <!--rowspan allows box to cover desired amount of rows, same thing applies to colspan-->
             <tr>
               <th rowspan="4" colspan="2" scope="coL" scope="rowgroup">Terrestrial planets</th>
                   <th scope="row">Mercury</th> 
@@ -125,7 +127,7 @@ caption {
             
         
         <!--bellow is the table header-->
-        Columns
+        
         <thead>
             <tr>
               
