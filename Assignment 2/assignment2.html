@@ -132,7 +132,11 @@
         <!-- insert images with srcsets and sizes -->
         
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="firefox_logo-only_RGB.png" alt="Download Firefox">
+          <img srcset="firefox-logo120.png 120w,
+                       firefox-logo400.png 400w"
+               sizes="(max-width: 500px) 120px,
+                      400px"
+               src="firefox-logo400.png" alt="Download Firefox">
         </a>
         <a href="https://www.mozilla.org/">
           <img src="mozilla-dinosaur-head.png" alt="mozilla.org ">
@@ -148,9 +152,9 @@
 <!--I added in the red panda picture, by settig width to auto, picture will display at appropriate size regardless of the device it is on -->
       <div class="red-panda">
         <picture>
-          <source media="(max-width: auto)" srcset="red-panda-small.jpg">
-          <img src="red-panda.jpg" alt="a red panda">
-        </picture>
+          <source media="(max-width: 600px)" srcset="red-panda-portrait-small.jpg">
+          <img src="red-panda-landscape.jpg" alt="a red panda">
+      </picture>
       </div>
 
     </main>
