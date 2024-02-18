@@ -3,7 +3,8 @@ body,html{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 1.125rem;
+    
 }
 .box{
     width: 200px;
