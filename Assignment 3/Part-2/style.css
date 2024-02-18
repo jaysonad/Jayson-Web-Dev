@@ -19,10 +19,11 @@ body,html{
     display: flex;
     align-items: center;
     border-radius: 8px;
-    box-shadow: 2px 2px 8px black;
-      
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        inset 2px 2px 8px rgba(255, 255, 255,0.5);
+        inset 2px 2px 8px rgba(0,0,0,0.5);
     border: 1px solid rgb(244, 52, 52);
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.2) 100%), red;
+    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.2) 100%), red;
 
 }
 
