@@ -43,3 +43,15 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+   /* Altering font style */
+   @font-face {
+    font-family: ;
+    src: url();
+   }
+
+
+
+   html{
+    font-family: ;
+    font-size: 10px;
+   }
