@@ -46,22 +46,22 @@
    /* Altering font style */
    /* Making the font roboto */
    @font-face {
-        font-family: 'Roboto' , sans-serif;
-        src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+        font-family: Roboto;
+        src: url(Roboto-Black.ttf);
     }
     @font-face {
-        font-family: "Anta", sans-serif;
-        src: url("https://fonts.googleapis.com/css2?family=Anta&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+        font-family: Anta ;
+        src: url(Anta-Regular.ttf);
     }
 
 /*Everything font related*/
 
    html{
-    font-family:"Roboto", serif ;
+    font-family:Roboto;
     font-size: 10px;
    }
    h1, h2 {
-    font-family:"Anta", sans-serif ;
+    font-family:Anta;
     letter-spacing: 2px;
   }
   h1 {
@@ -99,7 +99,15 @@
   a:link, a:visited {
     color: rgb(207, 110, 110);
   }
-  
+  a:focus, a:hover {
+    text-decoration: none;
+  }
+  a:active {
+    color: transparent;
+    text-shadow: 0px 0px 2px #f00,
+                 0px 0px 3px #f00,
+                 0px 0px 4px black,
+                 0px 0px 5px black;
   /* everthing related to navigation menu */
   nav li {
     list-style-type: none;
@@ -109,3 +117,15 @@
     padding-left: 0;
     margin-top: 0.8rem;
   }
+  nav li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 4;
+    text-align: center;
+    font-size: 2.5rem;
+    border: 1px solid rgb(176, 89, 89);
+  }
+  nav li a:focus, nav li a:hover {
+    color: white;
+    background: #a66;
