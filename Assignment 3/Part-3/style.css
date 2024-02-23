@@ -47,11 +47,12 @@
    /* Making the font roboto */
    @font-face {
         font-family: Roboto;
-        src: url(Roboto-Black.ttf);
+        src: url(fonts/Roboto-Black.ttf);
     }
+    /* Making the font Anta */
     @font-face {
         font-family: Anta ;
-        src: url(Anta-Regular.ttf);
+        src: url(fonts/Anta-Regular.ttf);
     }
 
 /*Everything font related*/
@@ -92,7 +93,7 @@
     list-style-type: ;
     margin: 1.6rem 0;
   }
-  /* styling of links */
+  /* changeeee styling of links */
   a {
     outline: none;
   }
@@ -102,6 +103,12 @@
   a:focus, a:hover {
     text-decoration: none;
   }
+  /*sets the restriction that any website with http it will take of this logo beside it*/
+  a[href*="http"] {
+    padding-right: 17px;
+    background: url(external-link-52.png) no-repeat 100% 0;
+    background-size: 16px 16px;
+  }
   a:active {
     color: transparent;
     text-shadow: 0px 0px 2px #f00,
@@ -109,6 +116,7 @@
                  0px 0px 4px black,
                  0px 0px 5px black;
   /* everthing related to navigation menu */
+  /* altering padding for ordered and unordered lists*/
   nav li {
     list-style-type: none;
     margin-bottom: 2rem;
@@ -126,6 +134,8 @@
     font-size: 2.5rem;
     border: 1px solid rgb(176, 89, 89);
   }
+  /*changes single line colour of links when hovered over*/
   nav li a:focus, nav li a:hover {
     color: white;
     background: #a66;
+}
