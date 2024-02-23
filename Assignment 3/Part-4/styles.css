@@ -16,11 +16,16 @@ body {
     margin: 0 auto;
     max-width: 980px;
   }
-  
+  /*grid is made and the gap between is abb 20px, 
+  container is also being divided into three equal columns
+  with one-fith being directed at each unit. Also fr is the unit of measure*/
   .grid {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    display:grid;
+    gap: 20px;
+    grid-template-columns: 3fr 1fr;
   }
   
   nav {
