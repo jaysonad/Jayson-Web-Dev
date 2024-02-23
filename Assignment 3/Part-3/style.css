@@ -97,7 +97,9 @@
   /* changeeee styling of links */
   a {
     outline: none;
-    
+    /*essentailly gives very important 
+    instructions to a list with these certain atributes like
+    nav li and a to look a certain way*/
   }
   nav li a {
     text-decoration: none;
