@@ -80,6 +80,7 @@
     line-height: 1.5;
     letter-spacing: 0.5px;
     word-spacing: 3px;
+    
   }
   /*bellow magin lists will be altered*/
   ul {
@@ -96,7 +97,18 @@
   /* changeeee styling of links */
   a {
     outline: none;
+    
   }
+  nav li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    font-size: 2.5rem;
+    border: 1px solid #a66;
+  }
+
   a:link, a:visited {
     color: rgb(207, 110, 110);
   }
