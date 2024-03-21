@@ -14,6 +14,7 @@ const insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewal
 
 randomize.addEventListener('click', result);
 
+
 function result() {
     let newStory = storyText;
   
@@ -38,4 +39,3 @@ function result() {
       }
       story.textContent = newStory;
   story.style.visibility = 'visible';
-}
